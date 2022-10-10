@@ -1,0 +1,169 @@
+
+<html>
+    <head>
+        <title>Reserva</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/059d9f168d.js" crossorigin="anonymous"></script>
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+              integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+              crossorigin="anonymous" />
+
+        <link rel="stylesheet" href="css/reserva.css">
+    </head>
+    <body>
+        <main class="main-container">
+            <div class="stepwizard">
+                <div class="stepwizard-row setup-panel">
+                    <div class="stepwizard-step">
+                        <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+                        <p>Cita</p>
+                    </div>
+                    <div class="stepwizard-step">
+                        <a href="#step-2" type="button" class="btn btn-default btn-circle" >2</a>
+                        <p>Datos</p>
+                    </div>
+                    <div class="stepwizard-step">
+                        <a href="#step-3" type="button" class="btn btn-default btn-circle" >3</a>
+                        <p>Reservar</p>
+                    </div>
+                </div>
+            </div>
+            <form id="form-reserva">
+                <div class="row setup-content" id="step-1">
+                    <div class="col-xs-12">
+                        <div class="col-md-12">
+                            <h3>Cita</h3>
+                            <div class="form-container1">
+                                <div class="form-group">
+                                    <label for="input-fecha" class="control-label">Selecciona la fecha</label>
+                                    <input type="datetime-local" id="input-fecha" name="fecha" required min="2022-10-03T08:00:00" max="2022-12-31T17:00:00">
+
+                                </div>
+                                <div class="form-group">
+                                    <p class="control-label">Selecciona el servicio</p>
+                                    <div class="radio-container">
+                                        <input type="radio" id="manicure-semi" name="servicio" value="1" required>
+                                        <label for="manicure-semi" class="control-label">Manicure semipermanente</label>
+                                        <label for="manicure-semi" class="control-label">$</label>
+                                        <label for="manicure-semi" class="control-label" id="precio-manicure">40000.00</label><br>
+                                    </div>
+                                    <div class="radio-container">
+                                    <input type="radio" id="pedicure-semi" name="servicio" value="2" required>
+                                    <label for="pedicure-semi" class="control-label">Pedicure semipermanente</label>
+                                    <label for="pedicure-semi" class="control-label">$</label>
+                                    <label for="pedicure-semi" class="control-label" id="precio-pedicure">40000.00</label><br>
+                                    </div>
+                                    <div class="radio-container">
+                                    <input type="radio" id="manicure-tradi" name="servicio" value="3" required>
+                                    <label for="manicure-tradi" class="control-label">Manicure y pedicure tradicional</label>
+                                    <label for="manicure-tradi" class="control-label">$</label>
+                                    <label for="manicure-tradi" class="control-label" id="precio-manicuretradi">15000.00</label><br>
+                                    </div>
+                                    <div class="radio-container">
+                                    <input type="radio" id="acrilicas" name="servicio" value="4" required>
+                                    <label for="acrilicas" class="control-label">Acrilicas</label>
+                                    <label for="acrilicas" class="control-label">$</label>
+                                    <label for="acrilicas" class="control-label" id="precio-acrilicas">120000.00</label><br>
+                                    </div>
+                                    <div class="radio-container">
+                                    <input type="radio" id="unas-press" name="servicio" value="5" required>
+                                    <label for="unas-press" class="control-label">Uñas Press on</label>
+                                    <label for="unas-press" class="control-label">$</label>
+                                    <label for="unas-press" class="control-label" id="precio-unaspress">90000.00</label>
+                                    </div>
+                                    <div class="radio-container">
+                                    <input type="radio" id="unas-tech" name="servicio" value="6" required>
+                                    <label for="unas-tech" class="control-label">Uñas Techgel</label>
+                                    <label for="unas-tech" class="control-label">$</label>
+                                    <label for="unas-tech" class="control-label" id="precio-unastech">100000.00</label>
+                                    </div>
+                                    <div class="radio-container">
+                                    <input type="radio" id="mani-hombre" name="servicio" value="7" required>
+                                    <label for="mani-hombre" class="control-label">Pedicure y manicure hombre</label>
+                                    <label for="mani-hombre" class="control-label">$</label>
+                                    <label for="mani-hombre" class="control-label" id="precio-hombre">30000.00</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Siguiente</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row setup-content" id="step-2">
+                    <div class="form-group">
+                        <label for="input-documento" class="form-label">Documento</label>
+                        <input type="number" class="form-control " id="input-documento" placeholder="Documento" required readonly onmousedown="return false;">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control " id="input-nombre" placeholder="Nombre" required readonly onmousedown="return false;">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-apellidos" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control " id="input-apellidos" placeholder="Apellidos" required readonly onmousedown="return false;">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-email" class="form-label">Email</label>
+                        <input type="email" class="form-control " id="input-email" placeholder="correo@example.com" required readonly onmousedown="return false;">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-contrasena" class="form-label">Password</label>
+                        <input type="password" class="form-control " id="input-contrasena" placeholder="contraseña" required readonly onmousedown="return false;">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-direccion">Direccion</label>
+                        <input type="text" class="form-control" id="input-direccion" placeholder="Direccion" required readonly onmousedown="return false;">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-ciudad">Ciudad</label>
+                        <input type="text" class="form-control" id="input-ciudad" placeholder="ciudad" required readonly onmousedown="return false;">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-comuna">Comuna</label>
+                        <input type="text" class="form-control" id="input-comuna" placeholder="Comuna" required readonly onmousedown="return false;">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="input-telefono" class="form-label">Telefono</label>
+                        <input type="text" class="form-control " id="input-telefono" placeholder="Telefono" required readonly onmousedown="return false;">
+                    </div>
+                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Siguiente</button>
+                </div>
+                <div class="row setup-content" id="step-3">
+                    <div class="col-xs-12">
+                        <div class="col-md-12">
+                            <h3>Confirmar</h3>
+                            <input class="btn btn-primary" type="submit" id="btn-reserva" value="Reservar">
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+            <div id="register-bueno" class="alert alert-bueno d-none" role="alert"></div>
+            <div id="register-error" class="alert alert-danger d-none" role="alert"></div>
+            <button class="btn btn-primary btn-lg inactive " id="btn-profile" type="button" >Terminar</button>
+        </main>
+        <script src="js/reserva.js"></script>
+        <script src="js/reservaFuncion.js"></script>
+    </body>
+</html>

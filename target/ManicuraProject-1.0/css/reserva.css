@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{ 
+    margin-top:40px; 
+}
+
+.inactive{
+    display: none;
+}
+.main-container{
+    margin: 20px auto;
+    width: 50vw;
+}
+.stepwizard-step p {
+    margin-top: 10px;
+}
+
+.stepwizard-row {
+    display: table-row;
+}
+
+.stepwizard {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+
+.stepwizard-step button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-order: 0;
+
+}
+
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+    width: 33.33%;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+
+.row {
+    width: 100%;
+    flex-direction: column;
+    align-content: stretch;
+}
+.col-md-12 .form-container1 {
+    display: flex;
+    justify-content: space-between;
+}
+.form-container1 .form-group:nth-child(1) {
+    display: flex;
+    flex-direction: column
+}
+.form-group p{
+    font-weight: 700;
+}
+
+ .main-container form #step-2 {
+    flex-direction: column;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #BA70F3;
+    border-color: #7311BE;
+}
+    
+.btn-primary:hover {
+    color:white;
+    background-color: #A039EE;
+    border-color: #000000;
+}
+.alert {
+    margin-top: 20px;
+}
+
+.alert-bueno {
+    background-color: #E9FFD0; 
+    border-color: #1C761F; 
+    color: #1C761F;
+}

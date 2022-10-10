@@ -1,0 +1,51 @@
+#main-menu{
+    left:unset;
+    right: 0;
+}
+
+#ordenar-genero{
+    cursor:pointer;
+}
+
+#form-container{
+    width:40vw;
+}
+
+body .bg-dark {
+    background-color: #D3A5F7!important;
+}
+
+.navbar-dark  .navbar-brand{
+    color: #A039EE;
+}
+.btn-group .btn{
+    background-color: #BA70F3;
+    border-color: #7311BE;
+    color:white;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-group .btn-primary:hover, .btn-group .btn-primary:focus{
+    background-color: #A039EE;
+    border-color: #A039EE;
+}
+
+.p-4 .table {
+    width: 50vw;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #FFF8FE;
+}
+
+.pb-4 .btn-primary{
+    background-color: #BA70F3;
+    border-color: #7311BE;
+}
+
+
+.pb-4 .btn-primary:hover, .pb-4 .btn-primary:focus{
+    background-color: #A039EE;
+    border-color: #A039EE;
+}
+

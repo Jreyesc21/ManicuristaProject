@@ -1,0 +1,28 @@
+
+#form-login .btn-primary {
+    margin-top: 20px; 
+    background-color: #BA70F3;
+    border-color: #7311BE;
+    color:white;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+#form-login .btn-primary:hover, .form-login .btn-primary:focus{
+    background-color: #A039EE;
+    border-color: #7311BE;
+}
+
+#form-register .btn-primary {
+    margin-top: 20px; 
+    background-color: #BA70F3;
+    border-color: #7311BE;
+    color:white;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+#form-register .btn-primary:hover, .form-login .btn-primary:focus{
+    background-color: #A039EE;
+    border-color: #7311BE;
+}
+
+.bg-login-image img{
+    width: 100%;
+}
